@@ -42,23 +42,101 @@ layout: default
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
+      <h2 class="section-title">news</h2>
       {% include news.liquid limit=true %}
     {% endif %}
 
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
+      {% assign latest_posts_link = page.latest_posts_link | default: '/blog/' %}
+      {% assign latest_posts_title = page.latest_posts_title | default: 'latest posts' %}
+      <h2 class="section-title">{{ latest_posts_title }}</h2>
       {% include latest_posts.liquid %}
+    {% endif %}
+
+    {% if page.contact or page.access_map %}
+      <div class="row mt-4">
+        <div class="col-md-6">
+          {% if page.contact_title or page.contact %}
+            <h2 class="section-title">{{ page.contact_title | default: 'Contact' }}</h2>
+          {% endif %}
+          {% assign has_email = false %}
+          {% assign has_address = false %}
+          {% assign has_affiliation = false %}
+          {% assign has_links = false %}
+          {% assign has_hobby = false %}
+
+          {% if page.contact and page.contact.email %}
+            {% assign has_email = true %}
+          {% endif %}
+          {% if page.contact and page.contact.address %}
+            {% assign has_address = true %}
+          {% endif %}
+          {% if page.contact and page.contact.affiliation %}
+            {% assign has_affiliation = true %}
+          {% endif %}
+          {% if page.contact and page.contact.links %}
+            {% assign has_links = true %}
+          {% endif %}
+          {% if page.contact and page.contact.hobby %}
+            {% assign has_hobby = true %}
+          {% endif %}
+
+          {% if has_email %}
+            <p><strong>{{ page.contact_email_label | default: 'Email' }}:</strong> {{ page.contact.email }}</p>
+          {% endif %}
+          {% if has_email %}
+            {% if has_address or has_affiliation or has_links or has_hobby %}
+              <hr class="contact-sep">
+            {% endif %}
+          {% endif %}
+          {% if has_address %}
+            <p><strong>{{ page.contact_address_label | default: 'Address' }}:</strong> {{ page.contact.address | newline_to_br }}</p>
+          {% endif %}
+          {% if has_address %}
+            {% if has_affiliation or has_links or has_hobby %}
+              <hr class="contact-sep">
+            {% endif %}
+          {% endif %}
+          {% if has_affiliation %}
+            <p><strong>{{ page.contact_affiliation_label | default: 'Affiliation' }}:</strong> {{ page.contact.affiliation }}</p>
+          {% endif %}
+          {% if has_affiliation %}
+            {% if has_links or has_hobby %}
+              <hr class="contact-sep">
+            {% endif %}
+          {% endif %}
+          {% if has_links %}
+            <p>
+              <strong>{{ page.contact_links_label | default: 'Links' }}:</strong>
+              <span class="contact-links">
+                {% for link in page.contact.links %}
+                  <a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %}, {% endunless %}
+                {% endfor %}
+              </span>
+            </p>
+          {% endif %}
+          {% if has_links and has_hobby %}
+            <hr class="contact-sep">
+          {% endif %}
+          {% if has_hobby %}
+            <p><strong>{{ page.contact_hobby_label | default: 'Hobby' }}:</strong> {{ page.contact.hobby }}</p>
+          {% endif %}
+        </div>
+        <div class="col-md-6">
+          {% if page.access_title or page.access_map %}
+            <h2 class="section-title">{{ page.access_title | default: 'Access' }}</h2>
+          {% endif %}
+          {% if page.access_map %}
+            <div class="access-map">{{ page.access_map }}</div>
+          {% endif %}
+        </div>
+      </div>
     {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
+      <h2 class="section-title">
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
       </h2>
       {% include selected_papers.liquid %}

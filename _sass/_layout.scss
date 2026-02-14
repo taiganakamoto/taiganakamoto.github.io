@@ -8,6 +8,7 @@ body {
   padding-bottom: 70px;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
 
   h1,
   h2,
@@ -31,6 +32,45 @@ body.sticky-bottom-footer {
 
 .container {
   max-width: v.$max-content-width;
+}
+
+.section-title {
+  border-left: 4px solid var(--global-theme-color);
+  padding-left: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-sep {
+  border-top: 1px solid var(--global-divider-color);
+  margin: 0.5rem 0;
+}
+
+.contact-links a {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+.presentation-item {
+  margin-bottom: 1rem;
+}
+
+.presentation-title,
+.presentation-authors,
+.presentation-when,
+.presentation-note {
+  margin-left: 1.25rem;
+}
+
+.presentation-title {
+  margin-left: 0;
 }
 
 // Profile

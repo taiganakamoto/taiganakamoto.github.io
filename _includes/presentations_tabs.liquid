@@ -1,0 +1,54 @@
+{% assign is_english = false %}
+{% if page.lang == 'en' %}
+  {% assign is_english = true %}
+{% endif %}
+
+{% if is_english %}
+  {% tabs presentations_en %}
+
+  {% tab presentations_en International (Oral) %}
+  {% include presentations_list.liquid items=site.data.presentations.international_oral %}
+  {% endtab %}
+
+  {% tab presentations_en International (Poster) %}
+  {% include presentations_list.liquid items=site.data.presentations.international_poster %}
+  {% endtab %}
+
+  {% tab presentations_en Domestic (Oral) %}
+  {% include presentations_list.liquid items=site.data.presentations.domestic_oral %}
+  {% endtab %}
+
+  {% tab presentations_en Domestic (Poster) %}
+  {% include presentations_list.liquid items=site.data.presentations.domestic_poster %}
+  {% endtab %}
+
+  {% tab presentations_en Seminar %}
+  {% include presentations_list.liquid items=site.data.presentations.seminar %}
+  {% endtab %}
+
+  {% endtabs %}
+{% else %}
+  {% tabs presentations %}
+
+  {% tab presentations 国際会議（口頭） %}
+  {% include presentations_list.liquid items=site.data.presentations.international_oral %}
+  {% endtab %}
+
+  {% tab presentations 国際会議（ポスター） %}
+  {% include presentations_list.liquid items=site.data.presentations.international_poster %}
+  {% endtab %}
+
+  {% tab presentations 国内会議（口頭） %}
+  {% include presentations_list.liquid items=site.data.presentations.domestic_oral %}
+  {% endtab %}
+
+  {% tab presentations 国内会議（ポスター） %}
+  {% include presentations_list.liquid items=site.data.presentations.domestic_poster %}
+  {% endtab %}
+
+  {% tab presentations セミナー %}
+  {% include presentations_list.liquid items=site.data.presentations.seminar %}
+  {% endtab %}
+
+  {% endtabs %}
+{% endif %}

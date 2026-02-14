@@ -1,0 +1,13 @@
+{% assign empty_array = '' | split: ',' %}
+{% assign items = include.items | default: empty_array %}
+{% for item in items %}
+<div class="presentation-item">
+	<div class="presentation-title">{{ forloop.index }}. <strong>"{{ item.title }}"</strong></div>
+	<div class="presentation-authors">{{ item.authors | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+	<div class="presentation-when">{{ item.when }}</div>
+	{% if item.note %}
+		<div class="presentation-note">{{ item.note | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+	{% endif %}
+</div>
+
+{% endfor %}

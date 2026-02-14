@@ -38,6 +38,17 @@ layout: default
   </header>
 
   <article>
+    {% assign cv_content = content | strip %}
+    {% if cv_content != '' %}
+      <div class="cv-switch">{{ content }}</div>
+    {% endif %}
+    {% if page.cv_tabs and page.cv_tabs.enabled %}
+      <nav class="cv-tabs" aria-label="CV sections">
+        {% for tab in page.cv_tabs.items %}
+          <a class="cv-tab" href="#{{ tab.target }}">{{ tab.label }}</a>
+        {% endfor %}
+      </nav>
+    {% endif %}
     <div class="cv">
       {% comment %} Determine which CV format to render {% endcomment %}
       {% assign render_rendercv = false %}
@@ -58,12 +69,16 @@ layout: default
 
       {% if render_rendercv and site.data.cv and site.data.cv.cv %}
         {% comment %} RenderCV format {% endcomment %}
-        {% assign cv = site.data.cv.cv %}
+        {% if page.lang == 'en' and site.data.cv_en and site.data.cv_en.cv %}
+          {% assign cv = site.data.cv_en.cv %}
+        {% else %}
+          {% assign cv = site.data.cv.cv %}
+        {% endif %}
 
         <!-- Header/Contact Information -->
         {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Contact Information</h3>
+            <h3 class="card-title font-weight-medium section-title">Contact Information</h3>
             <table class="table table-cv table-sm table-borderless">
               {% if cv.name %}
                 <tr>
@@ -115,7 +130,7 @@ layout: default
         <!-- Summary -->
         {% if cv.summary %}
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Professional Summary</h3>
+            <h3 class="card-title font-weight-medium section-title">Professional Summary</h3>
             <p>{{ cv.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
           </div>
         {% endif %}
@@ -128,8 +143,18 @@ layout: default
         {% assign combined_experience = exp | concat: vol %}
         {% if combined_experience.size > 0 %}
           <a class="anchor" id="experience"></a>
+          {% assign experience_title = 'Employment' %}
+          {% assign is_japanese = false %}
+          {% if page.lang == 'ja' or page.lang == nil %}
+            {% if site.lang == 'ja' or page.lang == 'ja' %}
+              {% assign is_japanese = true %}
+            {% endif %}
+          {% endif %}
+          {% if is_japanese %}
+            {% assign experience_title = '経歴' %}
+          {% endif %}
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Experience</h3>
+            <h3 class="card-title font-weight-medium section-title">{{ experience_title }}</h3>
             <div>
               {% assign entries = combined_experience %}
               {% include cv/experience.liquid %}
@@ -147,9 +172,24 @@ layout: default
             {% continue %}
           {% endif %}
 
+          {% assign display_title = section_title %}
+          {% assign is_japanese = false %}
+          {% if page.lang == 'ja' or page.lang == nil %}
+            {% if site.lang == 'ja' or page.lang == 'ja' %}
+              {% assign is_japanese = true %}
+            {% endif %}
+          {% endif %}
+          {% if is_japanese %}
+            {% if section_title == 'Education' %}
+              {% assign display_title = '学歴' %}
+            {% elsif section_title == 'Awards' or section_title == 'Honors and Awards' %}
+              {% assign display_title = '受賞' %}
+            {% endif %}
+          {% endif %}
+
           <a class="anchor" id="{{ section_title | slugify }}"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ section_title }}</h3>
+            <h3 class="card-title font-weight-medium section-title">{{ display_title }}</h3>
             <div>
               {% if section_title == 'Education' %}
                 {% assign entries = section_entries %}
@@ -202,7 +242,7 @@ layout: default
         <!-- Contact Information -->
         {% if site.data.resume.basics %}
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Contact Information</h3>
+            <h3 class="card-title font-weight-medium section-title">Contact Information</h3>
             {% assign basics = site.data.resume.basics %}
             <table class="table table-cv table-sm table-borderless">
               {% if basics.name %}

@@ -2,6 +2,42 @@
  * CV shared styles
  *****************************/
 
+.cv-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  margin: 1rem 0 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.cv-switch {
+  margin-bottom: 0.75rem;
+}
+
+.cv-tab {
+  color: var(--global-text-color);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+.cv-tab:hover {
+  color: var(--global-theme-color);
+  border-bottom-color: var(--global-theme-color);
+}
+
+.cv .section-title {
+  border-left: 4px solid var(--global-theme-color);
+  padding-left: 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
 div.container-link-button {
   margin-right: 0.5rem;
 }
@@ -13,6 +49,15 @@ table.table-cv {
   th {
     padding: 1px;
   }
+}
+
+.cv-date {
+  color: var(--global-text-color);
+  font-weight: 500;
+  font-size: 0.85rem;
+  display: inline-block;
+  min-width: 120px;
+  white-space: nowrap;
 }
 
 a.btncv {
