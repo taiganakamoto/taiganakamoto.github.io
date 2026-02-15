@@ -1,18 +1,6 @@
 cv:
   sections:
     Education:
-      - institution: 千葉県立稲毛高等学校
-        location: 千葉, 日本
-        studyType: 高等学校
-        start_date: 2015年04月
-        end_date: 2018年03月
-
-      - institution: 東北大学 理学部 物理学科
-        location: 宮城, 日本
-        studyType: 学士（物理学）
-        start_date: 2019年04月
-        end_date: 2023年03月
-
       - institution: 東京大学 理学系研究科 物理学専攻
         location: 東京, 日本
         studyType: 修士（物理学）
@@ -22,24 +10,37 @@ cv:
           - "指導教員: 辻直人"
           - "修士論文: [Theoretical study of the one-dimensional extended Hubbard model coupled with an optical cavity](/assets/pdf/Master_thesis_NakamotoTaiga.pdf)"
 
-    Experience:
-      - position: 統合物質・情報国際卓越大学院（MERIT-WINGS）
-        company: フェローシップ
-        url: https://www.merit.t.u-tokyo.ac.jp/merit/
-        start_date: 2023年10月
+      - institution: 東北大学 理学部 物理学科
+        location: 宮城, 日本
+        studyType: 学士（物理学）
+        start_date: 2019年04月
+        end_date: 2023年03月
 
+      - institution: 千葉県立稲毛高等学校
+        location: 千葉, 日本
+        studyType: 高等学校
+        start_date: 2015年04月
+        end_date: 2018年03月
+
+     
+    Experience:
       - position: グリーントランスフォーメーションを先導する高度人材育成プログラム（SPRING-GX）
         company: フェローシップ
         url: https://www.cis-trans.jp/spring_gx/
         start_date: 2025年04月
 
-    Awards:
-      - title: Best Poster Award
-        awarder: "ISSP-IIS Joint Symposium on Physics of Open Systems: Resonance, Symmetry and Topology (POS-RST 2025) <details style=\"display: inline-block; margin-left: 8px;\"><summary>賞状</summary><img src=\"/assets/img/POS-RST_Best_Poster_Award.jpg\" alt=\"POS-RST Best Poster Award 賞状\" style=\"max-width: 320px; width: 100%; height: auto; margin-top: 8px;\" /></details>"
-        date: 2025年08月
-        url: https://oka.issp.u-tokyo.ac.jp/pos-rst2025/
+      - position: 統合物質・情報国際卓越大学院（MERIT-WINGS）
+        company: フェローシップ
+        url: https://www.merit.t.u-tokyo.ac.jp/merit/
+        start_date: 2023年10月
 
+    Awards:
       - title: 若手奨励賞
         awarder: "第19回物性科学領域横断研究会 <details style=\"display: inline-block; margin-left: 8px;\"><summary>賞状</summary><img src=\"/assets/img/Ryouiki_wakate.jpg\" alt=\"物性科学領域横断研究会 若手奨励賞 賞状\" style=\"max-width: 320px; width: 100%; height: auto; margin-top: 8px;\" /></details>"
         date: 2025年11月
         url: https://ryoikioudan.issp.u-tokyo.ac.jp/index.html
+
+      - title: Best Poster Award
+        awarder: "ISSP-IIS Joint Symposium on Physics of Open Systems: Resonance, Symmetry and Topology (POS-RST 2025) <details style=\"display: inline-block; margin-left: 8px;\"><summary>賞状</summary><img src=\"/assets/img/POS-RST_Best_Poster_Award.jpg\" alt=\"POS-RST Best Poster Award 賞状\" style=\"max-width: 320px; width: 100%; height: auto; margin-top: 8px;\" /></details>"
+        date: 2025年08月
+        url: https://oka.issp.u-tokyo.ac.jp/pos-rst2025/

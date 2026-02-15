@@ -1,18 +1,6 @@
 cv:
   sections:
     Education:
-      - institution: Chiba Prefectural Inage High School
-        location: Chiba, Japan
-        studyType: High School
-        start_date: 2015/04
-        end_date: 2018/03
-
-      - institution: Tohoku University, Faculty of Science, Department of Physics
-        location: Miyagi, Japan
-        studyType: BSc (Physics)
-        start_date: 2019/04
-        end_date: 2023/03
-
       - institution: The University of Tokyo, Graduate School of Science, Department of Physics
         location: Tokyo, Japan
         studyType: MSc (Physics)
@@ -22,24 +10,38 @@ cv:
           - "Advisor: Naoto Tsuji"
           - "Master's thesis: [Theoretical study of the one-dimensional extended Hubbard model coupled with an optical cavity](/assets/pdf/Master_thesis_NakamotoTaiga.pdf)"
 
-    Experience:
-      - position: World-leading Innovative Graduate Study Program for Materials Research, Information, and Technology (MERIT-WINGS)
-        company: Fellowship
-        url: https://www.merit.t.u-tokyo.ac.jp/merit/
-        start_date: 2023/10
+      - institution: Tohoku University, Faculty of Science, Department of Physics
+        location: Miyagi, Japan
+        studyType: BSc (Physics)
+        start_date: 2019/04
+        end_date: 2023/03
 
+      - institution: Chiba Prefectural Inage High School
+        location: Chiba, Japan
+        studyType: High School
+        start_date: 2015/04
+        end_date: 2018/03
+
+
+
+    Experience:
       - position: Fostering Advanced Human Resources to Lead Green Transformation (SPRING-GX)
         company: Fellowship
         url: https://www.cis-trans.jp/spring_gx/
         start_date: 2025/04
 
-    Awards:
-      - title: Best Poster Award
-        awarder: "ISSP-IIS Joint Symposium on Physics of Open Systems: Resonance, Symmetry and Topology (POS-RST 2025) <details style=\"display: inline-block; margin-left: 8px;\"><summary>Certificate</summary><img src=\"/assets/img/POS-RST_Best_Poster_Award.jpg\" alt=\"POS-RST Best Poster Award certificate\" style=\"max-width: 320px; width: 100%; height: auto; margin-top: 8px;\" /></details>"
-        date: 2025/08
-        url: https://oka.issp.u-tokyo.ac.jp/pos-rst2025/
+      - position: World-leading Innovative Graduate Study Program for Materials Research, Information, and Technology (MERIT-WINGS)
+        company: Fellowship
+        url: https://www.merit.t.u-tokyo.ac.jp/merit/
+        start_date: 2023/10
 
+    Awards:
       - title: Young Researcher Encouragement Award
         awarder: "19th Interdisciplinary Research Workshop on Condensed Matter Science <details style=\"display: inline-block; margin-left: 8px;\"><summary>Certificate</summary><img src=\"/assets/img/Ryouiki_wakate.jpg\" alt=\"Young Researcher Encouragement Award certificate\" style=\"max-width: 320px; width: 100%; height: auto; margin-top: 8px;\" /></details>"
         date: 2025/11
         url: https://ryoikioudan.issp.u-tokyo.ac.jp/index.html
+            
+      - title: Best Poster Award
+        awarder: "ISSP-IIS Joint Symposium on Physics of Open Systems: Resonance, Symmetry and Topology (POS-RST 2025) <details style=\"display: inline-block; margin-left: 8px;\"><summary>Certificate</summary><img src=\"/assets/img/POS-RST_Best_Poster_Award.jpg\" alt=\"POS-RST Best Poster Award certificate\" style=\"max-width: 320px; width: 100%; height: auto; margin-top: 8px;\" /></details>"
+        date: 2025/08
+        url: https://oka.issp.u-tokyo.ac.jp/pos-rst2025/
