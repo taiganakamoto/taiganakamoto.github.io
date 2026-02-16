@@ -8,8 +8,6 @@ cv_format: rendercv # options: rendercv, jsonresume
 cv_tabs:
   enabled: true
   items:
-    - label: Employment
-      target: experience
     - label: Education
       target: education
     - label: Awards

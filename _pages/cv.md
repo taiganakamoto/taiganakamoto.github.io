@@ -9,11 +9,9 @@ cv_format: rendercv # options: rendercv, jsonresume
 cv_tabs:
   enabled: true
   items:
-    - label: 経歴
-      target: experience
     - label: 学歴
       target: education
-    - label: 受賞
+    - label: 受賞など
       target: awards
 ---
 

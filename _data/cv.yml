@@ -22,18 +22,6 @@ cv:
         start_date: 2015年04月
         end_date: 2018年03月
 
-     
-    Experience:
-      - position: グリーントランスフォーメーションを先導する高度人材育成プログラム（SPRING-GX）
-        company: フェローシップ
-        url: https://www.cis-trans.jp/spring_gx/
-        start_date: 2025年04月
-
-      - position: 統合物質・情報国際卓越大学院（MERIT-WINGS）
-        company: フェローシップ
-        url: https://www.merit.t.u-tokyo.ac.jp/merit/
-        start_date: 2023年10月
-
     Awards:
       - title: 若手奨励賞
         awarder: "第19回物性科学領域横断研究会 <details style=\"display: inline-block; margin-left: 8px;\"><summary>賞状</summary><img src=\"/assets/img/Ryouiki_wakate.jpg\" alt=\"物性科学領域横断研究会 若手奨励賞 賞状\" style=\"max-width: 320px; width: 100%; height: auto; margin-top: 8px;\" /></details>"
@@ -44,3 +32,13 @@ cv:
         awarder: "ISSP-IIS Joint Symposium on Physics of Open Systems: Resonance, Symmetry and Topology (POS-RST 2025) <details style=\"display: inline-block; margin-left: 8px;\"><summary>賞状</summary><img src=\"/assets/img/POS-RST_Best_Poster_Award.jpg\" alt=\"POS-RST Best Poster Award 賞状\" style=\"max-width: 320px; width: 100%; height: auto; margin-top: 8px;\" /></details>"
         date: 2025年08月
         url: https://oka.issp.u-tokyo.ac.jp/pos-rst2025/
+
+      - title: グリーントランスフォーメーションを先導する高度人材育成プログラム（SPRING-GX）
+        awarder: フェローシップ
+        date: 2025年04月-
+        url: https://www.cis-trans.jp/spring_gx/
+
+      - title: 統合物質・情報国際卓越大学院（MERIT-WINGS）
+        awarder: フェローシップ
+        date: 2023年10月-
+        url: https://www.merit.t.u-tokyo.ac.jp/merit/
