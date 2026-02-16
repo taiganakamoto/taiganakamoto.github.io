@@ -30,11 +30,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "post-ホームページを作成しました",
+        },{id: "post-i-created-my-homepage",
         
-          title: "ホームページを作成しました！",
+          title: "I created my homepage!",
         
-        description: "個人のホームページを公開しました。",
+        description: "I created my personal homepage.",
         section: "Posts",
         handler: () => {
           
