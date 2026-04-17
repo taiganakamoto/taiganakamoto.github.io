@@ -1,7 +1,11 @@
 metadata:
-  last_updated: '2026-02-16'
+  last_updated: '2026-04-17'
 papers:
-  G3gsbSgAAAAJ:u-x6o8ySG0sC:
+  G3gsbSgAAAAJ:d1gkVwhDpl0C:
     citations: 0
+    title: Photoemission Signatures of Photoinduced Carriers and Excitons in One-Dimensional Mott Insulators
+    year: '2026'
+  G3gsbSgAAAAJ:u-x6o8ySG0sC:
+    citations: 1
     title: One-dimensional extended Hubbard model coupled with an optical cavity
     year: '2025'
