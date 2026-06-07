@@ -23,6 +23,11 @@ cv:
         end_date: 2018年03月
 
     Awards:
+      - title: APS Best Poster Award
+        awarder: "New Topological and Non-Equilibrium States in Low-Dimensional Quantum Materials" <details style=\"display: inline-block; margin-left: 8px;\"><summary>賞状</summary><img src=\"/assets/img/NewTopo_Best_Poster_Award.jpg\" alt=\"APS Best Poster Award 賞状\" style=\"max-width: 320px; width: 100%; height: auto; margin-top: 8px;\" /></details>"
+        date: 2026年04月
+        url: https://www.xplorersymposia.org.cn/detail?id=439726208381386752&tab=speaker
+        
       - title: 若手奨励賞
         awarder: "第19回物性科学領域横断研究会 <details style=\"display: inline-block; margin-left: 8px;\"><summary>賞状</summary><img src=\"/assets/img/Ryouiki_wakate.jpg\" alt=\"物性科学領域横断研究会 若手奨励賞 賞状\" style=\"max-width: 320px; width: 100%; height: auto; margin-top: 8px;\" /></details>"
         date: 2025年11月

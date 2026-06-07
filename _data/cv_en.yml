@@ -23,6 +23,11 @@ cv:
         end_date: 2018/03
 
     Awards:
+      - title: APS Best Poster Award
+        awarder: "New Topological and Non-Equilibrium States in Low-Dimensional Quantum Materials" <details style=\"display: inline-block; margin-left: 8px;\"><summary>賞状</summary><img src=\"/assets/img/NewTopo_Best_Poster_Award.jpg\" alt=\"APS Best Poster Award 賞状\" style=\"max-width: 320px; width: 100%; height: auto; margin-top: 8px;\" /></details>"
+        date: 2026年04月
+        url: https://www.xplorersymposia.org.cn/detail?id=439726208381386752&tab=speaker
+        
       - title: Young Researcher Encouragement Award
         awarder: "19th Interdisciplinary Research Workshop on Condensed Matter Science <details style=\"display: inline-block; margin-left: 8px;\"><summary>Certificate</summary><img src=\"/assets/img/Ryouiki_wakate.jpg\" alt=\"Young Researcher Encouragement Award certificate\" style=\"max-width: 320px; width: 100%; height: auto; margin-top: 8px;\" /></details>"
         date: 2025/11
