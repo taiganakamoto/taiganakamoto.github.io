@@ -30,7 +30,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "post-i-created-my-homepage",
+        },{id: "post-i-submitted-new-arxiv-paper",
+        
+          title: "I submitted new arXiv paper!",
+        
+        description: "I submitted new arXiv paper!",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/newpaper/";
+          
+        },
+      },{id: "post-i-submitted-new-arxiv-paper",
+        
+          title: "I submitted new arXiv paper!",
+        
+        description: "I submitted new arXiv paper!",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/newpaper/";
+          
+        },
+      },{id: "post-i-created-my-homepage",
         
           title: "I created my homepage!",
         
