@@ -145,7 +145,7 @@ layout: default
           <a class="anchor" id="experience"></a>
           {% assign experience_title = 'Employment' %}
           {% assign is_japanese = false %}
-          {% if page.lang == 'ja' or page.lang == nil %}
+          {% if page.lang == 'ja' or page.lang == null %}
             {% if site.lang == 'ja' or page.lang == 'ja' %}
               {% assign is_japanese = true %}
             {% endif %}
@@ -174,7 +174,7 @@ layout: default
 
           {% assign display_title = section_title %}
           {% assign is_japanese = false %}
-          {% if page.lang == 'ja' or page.lang == nil %}
+          {% if page.lang == 'ja' or page.lang == null %}
             {% if site.lang == 'ja' or page.lang == 'ja' %}
               {% assign is_japanese = true %}
             {% endif %}

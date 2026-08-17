@@ -83,7 +83,9 @@ layout: default
           {% endif %}
 
           {% if has_email %}
-            <p><strong>{{ page.contact_email_label | default: 'Email' }}:</strong> {{ page.contact.email }}</p>
+            <p>
+              <strong>{{ page.contact_email_label | default: 'Email' }}:</strong> {{ page.contact.email }}
+            </p>
           {% endif %}
           {% if has_email %}
             {% if has_address or has_affiliation or has_links or has_hobby %}
@@ -91,7 +93,9 @@ layout: default
             {% endif %}
           {% endif %}
           {% if has_address %}
-            <p><strong>{{ page.contact_address_label | default: 'Address' }}:</strong> {{ page.contact.address | newline_to_br }}</p>
+            <p>
+              <strong>{{ page.contact_address_label | default: 'Address' }}:</strong> {{ page.contact.address | newline_to_br }}
+            </p>
           {% endif %}
           {% if has_address %}
             {% if has_affiliation or has_links or has_hobby %}
@@ -99,7 +103,9 @@ layout: default
             {% endif %}
           {% endif %}
           {% if has_affiliation %}
-            <p><strong>{{ page.contact_affiliation_label | default: 'Affiliation' }}:</strong> {{ page.contact.affiliation }}</p>
+            <p>
+              <strong>{{ page.contact_affiliation_label | default: 'Affiliation' }}:</strong> {{ page.contact.affiliation }}
+            </p>
           {% endif %}
           {% if has_affiliation %}
             {% if has_links or has_hobby %}
@@ -111,7 +117,8 @@ layout: default
               <strong>{{ page.contact_links_label | default: 'Links' }}:</strong>
               <span class="contact-links">
                 {% for link in page.contact.links %}
-                  <a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %}, {% endunless %}
+                  <a href="{{ link.url }}">{{ link.label }}</a>
+                  {%- unless forloop.last %}, {% endunless %}
                 {% endfor %}
               </span>
             </p>
@@ -120,7 +127,9 @@ layout: default
             <hr class="contact-sep">
           {% endif %}
           {% if has_hobby %}
-            <p><strong>{{ page.contact_hobby_label | default: 'Hobby' }}:</strong> {{ page.contact.hobby }}</p>
+            <p>
+              <strong>{{ page.contact_hobby_label | default: 'Hobby' }}:</strong> {{ page.contact.hobby }}
+            </p>
           {% endif %}
         </div>
         <div class="col-md-6">

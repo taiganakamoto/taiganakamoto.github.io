@@ -63,4 +63,4 @@ From this background, I am interested in studying new phenomena and functions th
 ・Cavity QED, Cavity quantum materials  
 ・Quantum many-body systems driven by light  
 ・Exciton Physics  
-・Tensor Networks  
+・Tensor Networks

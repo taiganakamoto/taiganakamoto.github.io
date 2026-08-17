@@ -13,18 +13,21 @@ tabs: true
 {% tabs publications_en %}
 
 {% tab publications_en Preprints %}
+
 <div class="publications">
 {% bibliography --query @*[pubtype=preprint]* %}
 </div>
 {% endtab %}
 
 {% tab publications_en Papers %}
+
 <div class="publications">
 {% bibliography --query @*[pubtype=paper]* %}
 </div>
 {% endtab %}
 
 {% tab publications_en Others %}
+
 <div class="publications">
 {% bibliography --query @*[pubtype=review]* %}
 </div>
