@@ -7,6 +7,9 @@ international_oral:
     when: "March 2026 | APS March Meeting 2026 @Denver (Colorado, USA)"
 
 international_poster:
+  - title: "Cavity QED with strongly correlated systems:One-dimensional extended Hubbard model study"
+    authors: "<u>Taiga Nakamoto</u>, Yuta Murakami, Naoto Tsuji"
+    when: "July 2026 | Emergence of Coherence in Nonequilibrium and Structured Environments (eco-noise) 2026 @Ettore Majorana Centre (Erice, Italy)"
   - title: "Photoemission signature of photo-induced carriers and excitons in one-dimensional Mott insulators"
     authors: "<u>Taiga Nakamoto</u>, Yuta Murakami, Naoto Tsuji"
     when: "April 2026 | New Topological and Non-Equilibrium States in Low-Dimensional Quantum Materials @Kyoto University (Kyoto, Japan)"
